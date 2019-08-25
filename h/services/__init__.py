@@ -95,6 +95,12 @@ def includeme(config):
     config.register_service_factory(
         ".user_update.user_update_factory", name="user_update"
     )
+    config.register_service_factory(
+        ".upvote.upvote_service_factory", name="upvote"
+    )
+    config.register_service_factory(
+        ".downvote.downvote_service_factory", name="downvote"
+    )
 
     config.add_directive(
         "add_annotation_link_generator", ".links.add_annotation_link_generator"

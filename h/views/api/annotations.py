@@ -19,6 +19,7 @@ objects and Pyramid ACLs in :mod:`h.traversal`.
 from __future__ import unicode_literals
 from pyramid import i18n
 
+from pyramid.httpexceptions import HTTPNoContent
 from h import search as search_lib
 from h import storage
 from h.views.api.exceptions import PayloadError
@@ -186,3 +187,38 @@ def _annotation_resource(request, annotation):
     group_service = request.find_service(IGroupService)
     links_service = request.find_service(name="links")
     return AnnotationContext(annotation, group_service, links_service)
+
+
+@api_config(
+    versions=["v1", "v2"],
+    route_name="api.annotation_upvote",
+    request_method="PUT",
+    link_name="annotation.upvote",
+    description="Upvote an annotation",
+    permission="read",
+)
+def upvote(context, request):
+    svc = request.find_service(name="upvote")
+    svc.upvote(request.user, context.annotation)
+
+    event = AnnotationEvent(request, context.annotation.id, "upvote")
+    request.notify_after_commit(event)
+
+    return HTTPNoContent()
+
+@api_config(
+    versions=["v1", "v2"],
+    route_name="api.annotation_downvote",
+    request_method="PUT",
+    link_name="annotation.downvote",
+    description="Downvote an annotation",
+    permission="read",
+)
+def downvote(context, request):
+    svc = request.find_service(name="downvote")
+    svc.downvote(request.user, context.annotation)
+
+    event = AnnotationEvent(request, context.annotation.id, "downvote")
+    request.notify_after_commit(event)
+
+    return HTTPNoContent()

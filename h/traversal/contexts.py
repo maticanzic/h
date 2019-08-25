@@ -78,7 +78,7 @@ class AnnotationContext(object):
             acl.append((Allow, self.annotation.userid, "flag"))
 
         # The user who created the annotation always has the following permissions
-        for action in ["admin", "update", "delete"]:
+        for action in ["admin", "update", "delete", "upvote", "downvote"]:
             acl.append((Allow, self.annotation.userid, action))
 
         # If we haven't explicitly authorized it, it's not allowed.

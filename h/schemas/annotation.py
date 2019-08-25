@@ -250,6 +250,8 @@ def _remove_protected_fields(appstruct):
         "hidden",
         "moderation",
         "user_info",
+        "upvoted",
+        "downvoted",
     ]:
         appstruct.pop(field, None)
 

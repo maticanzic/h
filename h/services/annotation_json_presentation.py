@@ -24,6 +24,8 @@ class AnnotationJSONPresentationService(object):
         moderation_svc,
         user_svc,
         has_permission,
+        upvote_svc,
+        downvote_svc,
     ):
         self.session = session
         self.group_svc = group_svc
@@ -39,6 +41,8 @@ class AnnotationJSONPresentationService(object):
                 flag_count_svc, user, has_permission
             ),
             formatters.AnnotationUserInfoFormatter(self.session, user_svc),
+            formatters.AnnotationUpvoteFormatter(upvote_svc, user),
+            formatters.AnnotationDownvoteFormatter(downvote_svc, user),
         ]
 
     def present(self, annotation_resource):
@@ -75,6 +79,8 @@ def annotation_json_presentation_service_factory(context, request):
     flag_count_svc = request.find_service(name="flag_count")
     moderation_svc = request.find_service(name="annotation_moderation")
     user_svc = request.find_service(name="user")
+    upvote_svc = request.find_service(name="upvote")
+    downvote_svc = request.find_service(name="downvote")
     return AnnotationJSONPresentationService(
         session=request.db,
         user=request.user,
@@ -85,4 +91,6 @@ def annotation_json_presentation_service_factory(context, request):
         moderation_svc=moderation_svc,
         user_svc=user_svc,
         has_permission=request.has_permission,
+        upvote_svc=upvote_svc,
+        downvote_svc=downvote_svc,
     )

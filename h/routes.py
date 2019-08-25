@@ -215,6 +215,23 @@ def includeme(config):
         traverse="/{pubid}",
     )
 
+    # Vote logic
+
+    config.add_route(
+    "api.annotation_upvote",
+    "/api/annotations/{id:[A-Za-z0-9_-]{20,22}}/upvote",
+    factory="h.traversal:AnnotationRoot",
+    traverse="/{id}",
+    )
+
+    config.add_route(
+    "api.annotation_downvote",
+    "/api/annotations/{id:[A-Za-z0-9_-]{20,22}}/downvote",
+    factory="h.traversal:AnnotationRoot",
+    traverse="/{id}",
+    )
+
+
     # Help
     config.add_route("help", "/docs/help")
     config.add_route("onboarding", "/welcome/")
