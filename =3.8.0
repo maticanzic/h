@@ -1,0 +1,26 @@
+Collecting tox
+  Downloading https://files.pythonhosted.org/packages/3f/21/66868fc9074e366d0dc6952c53c918230e772fd662e69b331bac7a67fcbe/tox-3.13.2-py2.py3-none-any.whl (80kB)
+Collecting virtualenv>=14.0.0 (from tox)
+  Downloading https://files.pythonhosted.org/packages/db/9e/df208b2baad146fe3fbe750eacadd6e49bcf2f2c3c1117b7192a7b28aec4/virtualenv-16.7.2-py2.py3-none-any.whl (3.3MB)
+Collecting packaging>=14 (from tox)
+  Downloading https://files.pythonhosted.org/packages/ec/22/630ac83e8f8a9566c4f88038447ed9e16e6f10582767a01f31c769d9a71e/packaging-19.1-py2.py3-none-any.whl
+Collecting filelock<4,>=3.0.0 (from tox)
+  Downloading https://files.pythonhosted.org/packages/93/83/71a2ee6158bb9f39a90c0dea1637f81d5eef866e188e1971a1b1ab01a35a/filelock-3.0.12-py3-none-any.whl
+Collecting py<2,>=1.4.17 (from tox)
+  Downloading https://files.pythonhosted.org/packages/76/bc/394ad449851729244a97857ee14d7cba61ddb268dce3db538ba2f2ba1f0f/py-1.8.0-py2.py3-none-any.whl (83kB)
+Collecting pluggy<1,>=0.12.0 (from tox)
+  Downloading https://files.pythonhosted.org/packages/06/ee/de89e0582276e3551df3110088bf20844de2b0e7df2748406876cc78e021/pluggy-0.12.0-py2.py3-none-any.whl
+Collecting toml>=0.9.4 (from tox)
+  Downloading https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2.py3-none-any.whl
+Collecting importlib-metadata<1,>=0.12 (from tox)
+  Downloading https://files.pythonhosted.org/packages/ad/aa/25fcbded2ab4ed4ff3071d1e000cd4f8f9c65653d2d7157dd105a8e81d42/importlib_metadata-0.19-py2.py3-none-any.whl
+Collecting six<2,>=1.0.0 (from tox)
+  Downloading https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Collecting pyparsing>=2.0.2 (from packaging>=14->tox)
+  Downloading https://files.pythonhosted.org/packages/11/fa/0160cd525c62d7abd076a070ff02b2b94de589f1a9789774f17d7c54058e/pyparsing-2.4.2-py2.py3-none-any.whl (65kB)
+Collecting attrs (from packaging>=14->tox)
+  Downloading https://files.pythonhosted.org/packages/23/96/d828354fa2dbdf216eaa7b7de0db692f12c234f7ef888cc14980ef40d1d2/attrs-19.1.0-py2.py3-none-any.whl
+Collecting zipp>=0.5 (from importlib-metadata<1,>=0.12->tox)
+  Downloading https://files.pythonhosted.org/packages/da/bd/1a5fdf15aa44231fd09f63ecf175b60f057ae37ec65b343bb009364923f3/zipp-0.5.2-py2.py3-none-any.whl
+Installing collected packages: virtualenv, pyparsing, attrs, six, packaging, filelock, py, zipp, importlib-metadata, pluggy, toml, tox
+Successfully installed attrs-19.1.0 filelock-3.0.12 importlib-metadata-0.19 packaging-19.1 pluggy-0.12.0 py-1.8.0 pyparsing-2.4.2 six-1.12.0 toml-0.10.0 tox-3.13.2 virtualenv-16.7.2 zipp-0.5.2

@@ -222,3 +222,20 @@ def downvote(context, request):
     request.notify_after_commit(event)
 
     return HTTPNoContent()
+
+@api_config(
+    versions=["v1", "v2"],
+    route_name="api.annotation_mark",
+    request_method="PUT",
+    link_name="annotation.mark",
+    description="Mark an annotation as no longer relevant",
+    permission="admin",
+)
+def mark(context, request):
+    svc = request.find_service(name="mark")
+    svc.mark(request.user, context.annotation)
+
+    event = AnnotationEvent(request, context.annotation.id, "mark")
+    request.notify_after_commit(event)
+
+    return HTTPNoContent()

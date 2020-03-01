@@ -231,6 +231,12 @@ def includeme(config):
     traverse="/{id}",
     )
 
+    config.add_route(
+    "api.annotation_mark",
+    "/api/annotations/{id:[A-Za-z0-9_-]{20,22}}/mark",
+    factory="h.traversal:AnnotationRoot",
+    traverse="/{id}",
+    )
 
     # Help
     config.add_route("help", "/docs/help")

@@ -70,6 +70,9 @@ class AnnotationContext(object):
             for principal in self._group_principals(self.group, "moderate"):
                 acl.append((Allow, principal, "moderate"))
 
+            for principal in self._group_principals(self.group, "mark"):
+                acl.append((Allow, principal, "mark"))
+
         else:
             acl.append((Allow, self.annotation.userid, "read"))
             # Flagging one's own private annotations is nonsensical,

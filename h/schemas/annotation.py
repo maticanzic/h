@@ -252,6 +252,7 @@ def _remove_protected_fields(appstruct):
         "user_info",
         "upvoted",
         "downvoted",
+        "markedByAdmin"
     ]:
         appstruct.pop(field, None)
 

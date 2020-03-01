@@ -7,13 +7,13 @@ import sqlalchemy as sa
 from h.db import Base
 from h.db import types
 
-class Downvote(Base):
+class Mark(Base):
     """.
 
-    Users can "downvote" annotations if they believe that the annotation is not useful and should be ranked lower.
+    Admins can "mark" annotations if they believe that the annotation is not relevant anymore and should be marked.
     """
 
-    __tablename__ = "downvote"
+    __tablename__ = "mark"
     __table_args__ = (sa.UniqueConstraint("annotation_id", "user_id"),)
 
     id = sa.Column(sa.Integer, autoincrement=True, primary_key=True)
@@ -24,7 +24,7 @@ class Downvote(Base):
         nullable=False,
     )
 
-    #: The annotation which has been downvoted.
+    #: The annotation which has been marked.
     annotation = sa.orm.relationship("Annotation")
 
     user_id = sa.Column(
@@ -34,8 +34,8 @@ class Downvote(Base):
         index=True,
     )
 
-    #: The user who created the downvote.
+    #: The user (admin) who created the mark.
     user = sa.orm.relationship("User")
 
     def __repr__(self):
-        return "<downvote annotation_id=%s user_id=%s>" % (self.annotation_id, self.user_id)
+        return "<mark annotation_id=%s user_id=%s>" % (self.annotation_id, self.user_id)

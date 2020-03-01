@@ -28,7 +28,7 @@ class AnnotationDownvoteFormatter(object):
         if self.user is None:
             return
 
-        downvoted_ids = self.downvote_servicee.all_downvoted(user=self.user, annotation_ids=ids)
+        downvoted_ids = self.downvote_service.all_downvoted(user=self.user, annotation_ids=ids)
 
         upovotes = {id_: (id_ in downvoted_ids) for id_ in ids}
         self._cache.update(downvotes)

@@ -101,6 +101,9 @@ def includeme(config):
     config.register_service_factory(
         ".downvote.downvote_service_factory", name="downvote"
     )
+    config.register_service_factory(
+        ".mark.mark_service_factory", name="mark"
+    )
 
     config.add_directive(
         "add_annotation_link_generator", ".links.add_annotation_link_generator"

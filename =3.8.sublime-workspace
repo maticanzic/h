@@ -1,0 +1,280 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"downvo",
+				"downvote"
+			],
+			[
+				"downvote",
+				"downvoteAnnotation"
+			],
+			[
+				"upvot",
+				"upvoteAnnotation"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ep/client/src/sidebar/store/modules/annotations.js",
+		"/home/ep/client/src/sidebar/services/test/api-index.json",
+		"/home/ep/client/build/manifest.json",
+		"/home/ep/client/package.json",
+		"/home/ep/client/src/sidebar/components/test/sort-menu-test.js",
+		"/home/ep/client/src/sidebar/components/test/annotation-test.js",
+		"/home/ep/client/src/sidebar/directive/test/h-branding-test.js",
+		"/home/ep/client/src/sidebar/util/annotation-metadata.js",
+		"/home/ep/client/src/sidebar/build-thread.js",
+		"/home/ep/client/src/sidebar/store/modules/selection.js",
+		"/home/ep/client/website-test/index.html",
+		"/home/ep/client/src/boot/boot.js",
+		"/home/ep/client/src/sidebar/services/api.js",
+		"/home/ep/client/src/sidebar/services/annotation-mapper.js",
+		"/home/ep/client/src/sidebar/store/test/index-test.js",
+		"/home/ep/client/src/sidebar/services/test/root-thread-test.js",
+		"/home/ep/client/src/sidebar/services/test/api-test.js",
+		"/home/ep/client/src/sidebar/services/test/annotation-mapper-test.js",
+		"/home/ep/client/src/sidebar/services/analytics.js",
+		"/home/ep/client/src/sidebar/services/root-thread.js",
+		"/home/ep/client/src/sidebar/components/annotation.js",
+		"/home/ep/client/src/sidebar/templates/annotation.html",
+		"/home/ep/client/src/styles/sidebar/components/annotation.scss",
+		"/home/ep/client/src/styles/sidebar/sidebar.scss",
+		"/home/ep/client/build/styles/sidebar.css",
+		"/home/ep/client/build/styles/icomoon.css",
+		"/home/ep/client/src/styles/vendor/icomoon.css",
+		"/home/ep/client/src/styles/mixins/icons.scss",
+		"/home/ep/client/src/styles/vendor/fonts/selection.json",
+		"/home/ep/client/src/sidebar/directive/test/h-tooltip-test.js",
+		"/home/ep/client/node_modules/gulp-cli/index.js"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"src/*",
+			"src",
+			"src/sidebar",
+			"",
+			"src",
+			"src/sidebar"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"require",
+			"presence of the Hypothesis client on the page",
+			"require('hypothesis')",
+			"old",
+			"sort",
+			"old",
+			"sort",
+			"old",
+			"flag",
+			"sort",
+			"srot",
+			"flag",
+			"sort",
+			"flag",
+			"sort",
+			"flag",
+			"sort",
+			"olde",
+			"sort",
+			"flag",
+			"sort",
+			"oldest",
+			"sort",
+			"flag",
+			"sort",
+			"flag",
+			"upvo",
+			"sort",
+			"flag",
+			"sort",
+			"oldest",
+			"flag",
+			"upvote",
+			"upvoted",
+			"upvo",
+			"Oldest",
+			"replyCount",
+			"api/annotations",
+			"descriptor",
+			"post",
+			"put",
+			"patch",
+			"disabled",
+			"user",
+			"annotation-replies__count",
+			"created",
+			"header",
+			"timestamp",
+			"create",
+			"created",
+			"updated",
+			"replyCount",
+			"replyCOunt",
+			"replyCOuntt",
+			"replyCOunt",
+			"flagg",
+			"flag",
+			"unhide",
+			"reply",
+			"count",
+			"action",
+			"actions",
+			"#",
+			"annotation-action-button",
+			"annotation-flag",
+			"h-icon-annotation-flag",
+			"vm.delete"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "=3.8.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 310.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

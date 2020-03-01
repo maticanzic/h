@@ -40,6 +40,7 @@ from h.models.user import User
 from h.models.user_identity import UserIdentity
 from h.models.upvote import Upvote
 from h.models.downvote import Downvote
+from h.models.mark import Mark
 
 __all__ = (
     "Activation",
@@ -65,4 +66,5 @@ __all__ = (
     "UserIdentity",
     "Upvote",
     "Downvote",
+    "Mark"
 )
